@@ -1,0 +1,465 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2D2E2F;
+    position: relative;
+}
+
+.header {
+    display: inline-block;
+    background: rgba(37, 71, 94, 0.9);
+    height: 65px;
+    width: 100%;
+}
+
+.logotype {
+    display: inline;
+}
+
+.logotype img {
+    width: 160px;
+    height: 76px;
+    padding: 0px 45px 0px 215px;
+    margin-top: -5px;
+}
+
+.profile-btn {
+    width: 100px;
+    font: 500 15px "Inter", sans-serif;
+    padding: 6px 17px 10px 14px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -60px;
+    margin-left: 600px;
+}
+
+.profile-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.profile-btn img {
+    width: 24px;
+    height: 24px;
+    margin-top: -5px;
+    margin-left: -30px;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.profile-btn #arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: 4px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.games-btn {
+    width: 40px;
+    font: 500 15px "Inter", sans-serif;
+    padding: 6px 17px 10px 14px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -35px;
+    margin-left: 740px;
+}
+
+.games-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.lists-btn {
+    width: 70px;
+    font: 500 15px "Inter", sans-serif;
+    padding: 8px 19px 14px 15px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -35px;
+    margin-left: 815px;
+}
+
+.lists-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.journal-btn {
+    width: 70px;
+    font: 500 15px "Inter", sans-serif;
+    padding: 8px 19px 14px 15px;
+    text-align: center;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -40px;
+    margin-left: 925px;
+}
+
+.journal-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-field {
+    margin-left: 1095px;
+    margin-top: -42px;
+}
+
+.form-search {
+    padding: 10px 21px 15px 10px;
+    max-width: fit-content;
+    height: 15px;
+    border: 1px solid #747474;
+    border-radius: 20px;
+    background-image: linear-gradient(#D3CCCC, #D3CCCC);
+}
+
+.form-search:focus-within {
+    background: linear-gradient(#D3CCCC, #D3CCCC);
+}
+
+.form-search input[type="search"] {
+    width: 100px;
+    height: 20px;
+    line-height: 32px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0 0 0 6px;
+    background: transparent;
+    font: 13px Helvetica, Arial, sans-serif;
+    transition: all .2s ease-out;
+}
+
+.form-search:focus-within input[type="search"],
+.form-search input[type="search"]:focus {
+    width: 130px;
+    color: #000;
+}
+
+.form-search input[type="image"] {
+    vertical-align: middle;
+    margin-right: -10px;
+}
+
+.content {
+    background: #2D2E2F;
+    margin-top: 50px;
+    height: auto;
+    width: 1030px;
+    margin-left: 245px;
+    margin-right: 245px;
+}
+
+.popular-lists-text {
+    width: fit-content;
+    height: auto;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 10px;
+    padding: 0;
+}
+
+.list-link {
+    width: 428px;
+    height: 206px;
+    margin-top: 25px;
+    position: absolute;
+    z-index: 4;
+}
+
+.list {
+    width: fit-content;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.list-link:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(24, 163, 255);
+}
+
+.fram {
+    width: 125px;
+    height: 205px;
+    flex-grow: 0;
+    border-radius: 10px;
+    border: solid 1px #ffffffb5;
+    z-index: 3;
+}
+
+.fram1 {
+    width: 125px;
+    height: 205px;
+    margin: 0 0 0 -50px;
+    border-radius: 10px;
+    border: solid 1px #ffffffb5;
+    z-index: 2;
+}
+
+.fram2 {
+    width: 125px;
+    height: 205px;
+    flex-grow: 0;
+    margin: 0 0 0 -50px;
+    border-radius: 10px;
+    border: solid 1px #ffffffb5;
+    z-index: 1;
+}
+
+.fram3 {
+    width: 125px;
+    height: 205px;
+    flex-grow: 0;
+    margin: 0 0 0 -50px;
+    border-radius: 10px;
+    border: solid 1px #ffffffb5;
+    z-index: 0;
+}
+
+.fram4 {
+    width: 125px;
+    height: 205px;
+    flex-grow: 0;
+    margin: 0 0 0 -55px;
+    border-radius: 10px;
+    border: solid 1px #ffffffb5;
+}
+
+.list-count {
+    width: fit-content;
+    height: 30px;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: lighter;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.list-title {
+    width: fit-content;
+    height: auto;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.list-name {
+    width: fit-content;
+    height: auto;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.list-name:hover {
+    color: #b7b9be;
+}
+
+.nickname:hover {
+    color: #b7b9be;
+}
+
+.user-info {
+    width: fit-content;
+    height: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.ava-name {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    margin-top: -5px;
+}
+
+.ava {
+    width: 30px;
+    height: 30px;
+    flex-grow: 0;
+    border-radius: 55px;
+}
+
+.nickname {
+    width: fit-content;
+    height: auto;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+}
+
+.list-count {
+    width: fit-content;
+    height: 29px;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: lighter;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.list-like,
+.list-comment {
+    width: fit-content;
+    height: auto;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: lighter;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+}
+
+.list-lik,
+.list-commen {
+    width: 20px;
+    height: 20px;
+}
+
+.list-descr {
+    width: fit-content;
+    height: auto;
+    flex-grow: 0;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+    position: relative;
+    background: #B2B1B1
+}
+
+.footer-line1 {
+    height: 29px;
+    left: 246px;
+    top: 30px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    display: inline-flex;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-line1 p a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-line2 {
+    height: 29px;
+    left: 246px;
+    top: 70px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.footer-line2 p a {
+    color: black;
+    text-decoration: underline;
+}
+
+.socials {
+    width: 160px;
+    height: 32px;
+    top: 45px;
+    left: 1180px;
+    position: absolute;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    display: inline-flex;
+}
+
+.socials img {
+    width: 25px;
+    height: 25px;
+}

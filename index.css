@@ -791,7 +791,7 @@ p {
 }
 
 .review-text p {
-    max-width: 360px;
+    max-width: 600px;
     height: auto;
     color: white;
     font-size: 13px;

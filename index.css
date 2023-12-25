@@ -791,10 +791,10 @@ p {
 }
 
 .review-text p {
-    max-width: 600px;
+    max-width: 900px;
     height: auto;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     font-family: Inter;
     font-weight: 300;
     word-wrap: break-word;

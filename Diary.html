@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="diary.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Щоденник ігор - Enr1k3</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logotype">
+            <a href="Index.html">
+                <img class="logo" src="Лого.png" />
+            </a>
+        </div>
+        <div class="profile-btn">
+            <a href="Profile.html">
+                <img src="ava.jpg" alt="avatar">
+                Enr1k3
+                <img id="arrow" src="down.png" alt="down arrow">
+            </a>
+        </div>
+        <div class="games-btn">
+            <a href="Games.html">Ігри</a>
+        </div>
+        <div class="lists-btn">
+            <a href="Lists.html">
+                <span>Списки</span>
+            </a>
+        </div>
+        <div class="journal-btn">
+            <a href="Journal.html">
+                <span>Журнал</span>
+            </a>
+        </div>
+        <div class="search-field">
+            <form class="form-search" action="/search/" target="_blank">
+                <input type="hidden" name="searchid" value="">
+                <input type="search" name="text" required placeholder="пошук">
+                <input type="image" src="search.png" />
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="user-ava-category">
+            <div class="user-info">
+                <div class="ava-name">
+                    <img class="ava" src="ava.jpg" alt="Enr1k3 ava">
+                    <span class="nickname">Enr1k3</span>
+                </div>
+            </div>
+            <div class="text">
+                <a href="Profile.html">
+                    <span class="category">Профіль</span>
+                </a>
+                <a href="Activity.html">
+                    <span class="category">Активність</span>
+                </a>
+                <a href="UserGames.html">
+                    <span class="category">Ігри</span>
+                </a>
+                <a href="Diary.html">
+                    <span class="category-active">Щоденник</span>
+                </a>
+                <a href="Reviews.html">
+                    <span class="category">Відгуки</span>
+                </a>
+                <a href="Wishlist.html">
+                    <span class="category">Список бажаного</span>
+                </a>
+                <a href="Liked.html">
+                    <span class="category">Уподобані</span>
+                </a>
+            </div>
+        </div>
+        <div class="filter">
+            <div class="filt">
+                <span class="filt-text">ОЦІНКА</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">РІК ЩОДЕННИКА</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">ДЕСЯТИЛІТТЯ</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">ЖАНР</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">ДАТА ГРИ</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">СТАТУС</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+        </div>
+        <table cellpadding="0" cellspacing="0" class="diary-table">
+            <thead>
+                <tr>
+                    <th scope="col" class="th-month">Місяць</th>
+                    <th scope="col" class="th-day">День</th>
+                    <th scope="col" class="th-game">Гра</th>
+                    <th scope="col" class="th-release-date">Дата релізу</th>
+                    <th scope="col" class="th-rating">Оцінка</th>
+                    <th scope="col" class="th-like">Вподобання</th>
+                    <th scope="col" class="th-replay">Грав</th>
+                    <th scope="col" class="th-review">Огляд</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="game1">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">ВЕР</span>
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>21</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="acrevelations.png" alt="Assassin's Creed Revelations">
+                                <span class="gam-title">Assassin's Creed Revelations</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2011</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="9.png" alt="9/10 or 4.5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <img src="replay.png" alt="replay">
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+                <tr class="game2">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <!--<img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">СЕР</span>-->
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>05</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="acbrotherhood.jpg" alt="Assassin's Creed Brotherhood">
+                                <span class="gam-title">Assassin's Creed Brotherhood</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2010</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="10.png" alt="10/10 or 5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <!--<img src="replay.png" alt="replay">-->
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+                <tr class="game3">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">СЕР</span>
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>15</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="ac2.jpg" alt="Assassin's Creed II">
+                                <span class="gam-title">Assassin's Creed II</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2009</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="9.png" alt="9/10 or 4.5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <!--<img src="replay.png" alt="replay">-->
+                    </td>
+                    <td class="td-review">
+                        <!--<img src="review.png" alt="review">-->
+                    </td>
+                </tr>
+                <tr class="game4">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <!--<img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">СЕР</span>-->
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>04</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="ac.png" alt="Assassin's Creed">
+                                <span class="gam-title">Assassin's Creed</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2007</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="8.png" alt="8/10 or 4/5">
+                    </td>
+                    <td class="td-like">
+                        <!--<img src="Like.png" alt="like">-->
+                    </td>
+                    <td class="td-replay">
+                        <img src="replay.png" alt="replay">
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+                <tr class="game5">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <!--<img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">СЕР</span>-->
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>02</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="re2.jpg" alt="Resident Evil 2 (2019)">
+                                <span class="gam-title">Resident Evil 2</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2019</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="10.png" alt="10/10 or 5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <img src="replay.png" alt="replay">
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+                <tr class="game6">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <!--<img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">СЕР</span>-->
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>01</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="batmanak.jpg" alt="Batman Arkham Knight">
+                                <span class="gam-title">Batman Arkham Knight</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2015</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="10.png" alt="10/10 or 5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <!--<img src="replay.png" alt="replay">-->
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+                <tr class="game7">
+                    <td class="td-month">
+                        <div class="calendar-ico">
+                            <img src="calendar.png" alt="calendar ico">
+                            <span class="month-text">ЛИП</span>
+                        </div>
+                    </td>
+                    <td class="td-day">
+                        <span>10</span>
+                    </td>
+                    <td class="td-game">
+                        <div class="game-poster-title">
+                            <a href="GameCard.html">
+                                <img class="poster" src="re4.jpg" alt="Resident Evil 4 (2023)">
+                                <span class="gam-title">Resident Evil 4</span>
+                            </a>
+                        </div>
+                    </td>
+                    <td class="td-year">
+                        <span>2023</span>
+                    </td>
+                    <td class="td-rating">
+                        <img src="10.png" alt="10/10 or 5/5">
+                    </td>
+                    <td class="td-like">
+                        <img src="Like.png" alt="like">
+                    </td>
+                    <td class="td-replay">
+                        <!--<img src="replay.png" alt="replay">-->
+                    </td>
+                    <td class="td-review">
+                        <img src="review.png" alt="review">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-line1">
+                <p><a href="about">Про нас</a></p>
+                <p><a href="contacts">Контакти</a></p>
+                <p><a href="terms">Умови використання</a></p>
+                <p><a href="help">Допомога</a></p>
+            </div>
+            <div class="footer-line2">
+                <p>© GameVerse Limited. Made by <a href="https://www.instagram.com/enr1k327"> Yurii Popiuk</a> from
+                    Ukraine.</p>
+                <p>Дані про ігри взяті з <a href="https://www.igdb.com/">IGDB</a>.</p>
+                <p><a href="mobile">Мобільний сайт</a>.</p>
+            </div>
+            <div class="socials">
+                <a href="instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="twitter">
+                    <img src="Twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

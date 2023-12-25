@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>GameVerse - Відеоігровий відслідковувач</title>
+</head>
+
+<body>
+    <div class="overlay1"></div>
+    <div class="overlay2"></div>
+    <div class="overlay3"></div>
+    <div class="header">
+        <div class="logotype">
+            <a href="Index.html">
+                <img class="logo" src="Лого.png" />
+            </a>
+        </div>
+        <div class="login-btn">
+            <a href="IndexReg.html">Вхід</a>
+        </div>
+        <div class="register-btn">
+            <a href="Register.html">Створити акаунт</a>
+        </div>
+        <div class="games-btn">
+            <a href="Games.html">Ігри</a>
+        </div>
+        <div class="search-field">
+            <form class="form-search" action="/search/" target="_blank">
+                <input type="hidden" name="searchid" value="">
+                <input type="search" name="text" required placeholder="пошук">
+                <input type="image" src="search.png" />
+            </form>
+        </div>
+        <div class="text">
+            <h3>Відстежуйте ігри, в які ви грали.</h3>
+            <h3>Зберігайте ті, які хочете пограти.</h3>
+            <h3>Розкажіть друзям про хороші ігри.</h3>
+        </div>
+    </div>
+    <div class="overlay4"></div>
+    <div class="sign">
+        <article>
+            <section class="register-form">
+                <a href="close">
+                    <img src="Close.png" class="close">
+                </a>
+                <h1>Приєднайтесь до GameVerse</h1>
+                <form method="get" novalidate="novalidate" autocorrect="off" autocapitalize="off">
+                    <input type="hidden" name="token" value="">
+                    <fieldset>
+                        <section class="account-info">
+                            <div class="form-row">
+                                <label>Email address</label>
+                                <input type="email" name="emailAddress" class="field-email" inputmode="email" value="">
+                            </div>
+                            <div class="form-row">
+                                <label>Username</label>
+                                <br>
+                                <input type="text" name="username" class="field-name" maxlength="15" value=""
+                                    autocomplete="off">
+                                <div class="check-container" data-check-url="/s/checkusername"></div>
+                            </div>
+                            <div class="form-row">
+                                <label>Password</label>
+                                <br>
+                                <input type="password" name="password" class="field-pass" autocomplete="new-password"
+                                    value="">
+                            </div>
+                            <div class="form-row">
+                                <label class="option-label">
+                                    <input type="checkbox" name="termsAndAge" class="checkbox" value="true"><i
+                                        class="substitute"></i>
+                                    Мені більше 16 років і я приймаю <a href="/legal/terms-of-use/" target="_blank"
+                                        rel="noopener noreferrer">Умови використання</a>.
+                                </label>
+                            </div>
+                            <div class="form-row">
+                                <label class="option-label">
+                                    <input type="checkbox" name="acceptPrivacyPolicy" class="checkbox" value="true"><i
+                                        class="substitute"></i>
+                                    Я приймаю <a href="/legal/privacy-policy/" target="_blank"
+                                        rel="noopener noreferrer">Політику конфіденційності</a> та даю згоду на
+                                    обробку моєї особистої інформації відповідно до неї.
+                                </label>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="js-recaptcha" style="margin-bottom: 20px; min-height: 78px;"><iframe
+                                    src="https://newassets.hcaptcha.com/captcha/v1/1bcdbdd/static/hcaptcha.html#frame=checkbox&amp;id=0tut97ljlnb&amp;host=letterboxd.com&amp;sentry=true&amp;reportapi=https%3A%2F%2Faccounts.hcaptcha.com&amp;recaptchacompat=true&amp;custom=false&amp;hl=uk&amp;tplinks=on&amp;pstissuer=https%3A%2F%2Fpst-issuer.hcaptcha.com&amp;sitekey=f74f85da-8202-441f-8465-11f2ebc7ef04&amp;theme=dark&amp;origin=https%3A%2F%2Fletterboxd.com"
+                                    tabindex="0" frameborder="0" scrolling="no"
+                                    allow="private-state-token-issuance 'src'; private-state-token-redemption 'src'"
+                                    title="Віджет із прапорцем для перевірки безпеки hCaptcha"
+                                    data-hcaptcha-widget-id="0tut97ljlnb" data-hcaptcha-response=""
+                                    style="pointer-events: auto; width: 303px; height: 78px; overflow: hidden;"></iframe><textarea
+                                    id="g-recaptcha-response-0tut97ljlnb" name="g-recaptcha-response"
+                                    style="display: none;"></textarea><textarea id="h-captcha-response-0tut97ljlnb"
+                                    name="h-captcha-response" style="display: none;"></textarea></div>
+                            <div class="form-row buttons">
+                                <div class="button-container">
+                                    <input type="submit" class="signup-button" value="Зареєструватись"
+                                        formaction="IndexReg.html"><i></i>
+                                </div>
+                            </div>
+                        </section>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </div>
+    <div class="content">
+        <div class="popular-game-text">
+            <h4>Найпопулярніші ігри цього місяця</h4>
+        </div>
+        <div class="popular-games">
+            <div class="frame1">
+                <a href="GameCard.html">
+                    <img src="alanwake2.png" alt="Alan Wake II">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="Spiderman2.html">
+                    <img src="spiderman2.png" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="CitiesSkyline2.html">
+                    <img src="cities.jpg" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="SuperMario.html">
+                    <img src="supermario.jpg" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="BaldursGate3.html">
+                    <img src="bg3.jpg" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="ACMirage.html">
+                    <img src="acmirage.png" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+        </div>
+        <div class="features-text">
+            <p>З нами ви можете...</p>
+        </div>
+        <div class="features1">
+            <div class="track">
+                <span class="icon"></span>
+                <p>Відстежувати ігри, які ви коли-небуть грали чи чули про них</p>
+            </div>
+            <div class="like">
+                <span class="icon"></span>
+                <p>Проявити уподобання до улюблених ігор, списків та оглядів, поставивши лайк</p>
+            </div>
+            <div class="read">
+                <span class="icon"></span>
+                <p>Читати і поширювати огляди, і стежити за друзями та іншими учасниками, щоб читати їх</p>
+            </div>
+        </div>
+        <div class="features1">
+            <div class="rate">
+                <span class="icon"></span>
+                <p>Оцінювати кожну гру по п’ятибальній шкалі (з половинами) щоб записувати та ділитися своїми враженнями
+                </p>
+            </div>
+            <div class="diary">
+                <span class="icon"></span>
+                <p>Bести щоденник ваших ігор, які ви грали чи граєте тепер</p>
+            </div>
+            <div class="share">
+                <span class="icon"></span>
+                <p>Доповнювати і поширювати списки ігор на будь-яку тему і зберігати список ігор, що ви зіграли</p>
+            </div>
+        </div>
+        <div class="recent-reviews-text">
+            <p>Останні огляди</p>
+        </div>
+        <div class="recent-reviews">
+            <div class="frame1">
+                <a href="CoDMW3.html">
+                    <img src="mw3.jpg" alt="CoD: MW3 2023">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="Spiderman2.html">
+                    <img src="spiderman2.png" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="EvilWithin.html">
+                    <img src="ew.jpg" alt="The Evil Within">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="AlanWake2.html">
+                    <img src="alanwake2.png" alt="Alan Wake II">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="BaldursGate3.html">
+                    <img src="bg3.jpg" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="ACMirage.html">
+                    <img src="acmirage.png" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="CS2.html">
+                    <img src="cs2.jpg" alt="Counter-Strike 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="RE42023.html">
+                    <img src="re4.jpg" alt="Resident Evil 4 2023">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="LiesOfP.html">
+                    <img src="liesofp.jpg" alt="Lies Of P">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="SuperMario.html">
+                    <img src="supermario.jpg" alt="Marvel's Spider-Man 2">
+                </a>
+            </div>
+            <div class="frame1">
+                <a href="CitiesSkyline2.html">
+                    <img src="cities.jpg" alt="Cities Skyline II">
+                </a>
+            </div>
+            <div class="frame2">
+                <a href="GoWRagnarok.html">
+                    <img src="ragnarok.png" alt="God of War Ragnarok">
+                    <div class="overlay"></div>
+                </a>
+            </div>
+        </div>
+        <div class="popular-reviews-text">
+            <p>Популярні огляди тижня</p>
+        </div>
+        <ul class="reviews">
+            <li class="review1">
+                <a class="poster-review" href="CoDMW3.html"></a>
+                <img src="mw3.jpg" alt="Call of Duty Modern Warfare 3(2023)">
+                <div class="block">
+                    <div class="name">
+                        <a href="shumpolp/CoDMW3">
+                            <h4>Call Of Duty Modern Warfare 3</h4>
+                        </a>
+                        <small class="year">
+                            <a href="year/2023">
+                                <p>2023</p>
+                            </a>
+                        </small>
+                    </div>
+                    <div class="status">
+                        <p id="stat1"><b>Пройдено</b></p>
+                        <p>на</p>
+                        <a href="platform/pc">
+                            <img src="windows.png" alt="PC Windows">
+                        </a>
+                    </div>
+                    <div class="user-ava-rating">
+                        <div class="user-ava-name">
+                            <a href="userid">
+                                <img src="user.png" alt="User avatar">
+                            </a>
+                            <a href="userid">
+                                <p>Shumpolp</p>
+                            </a>
+                        </div>
+                        <div class="user-rating">
+                            <img src="зірки.png" alt="rating">
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Доповнення за 70 долларів, жахлива сюжетна компанія, а мультиплеєр непоганий, проте немає
+                            багато
+                            змін.</p>
+                    </div>
+                    <div class="likes">
+                        <a href="like.js">
+                            <img src="like.svg">
+                        </a>
+                        <p id="numbers">1520</p>
+                        <p>вподобань</p>
+                    </div>
+                    <hr>
+                </div>
+            </li>
+            <li class="review1">
+                <a class="poster-review" href="AlanWake2.html"></a>
+                <img src="alanwake2.png" alt="Alan Wake II">
+                <div class="block">
+                    <div class="name">
+                        <a href="enr1k3/AlanWake2">
+                            <h4>Alan Wake II</h4>
+                        </a>
+                        <small class="year">
+                            <a href="year/2023">
+                                <p>2023</p>
+                            </a>
+                        </small>
+                    </div>
+                    <div class="status">
+                        <p id="stat2"><b>Грав</b></p>
+                        <p>на</p>
+                        <a href="platform/xbox">
+                            <img src="xbox.png" alt="Xbox">
+                        </a>
+                    </div>
+                    <div class="user-ava-rating">
+                        <div class="user-ava-name">
+                            <a href="userid">
+                                <img src="ava.jpg" alt="User avatar">
+                            </a>
+                            <a href="userid">
+                                <p>Enr1k3</p>
+                            </a>
+                        </div>
+                        <div class="user-rating">
+                            <img src="10.png" alt="rating">
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>У мене немає слів, щоб описати, наскільки ця гра ідеальна...
+                            Вона використовує все, що можуть запропонувати інші ігри Remedy, і піднімає його на новий
+                            рівень.
+                            Без сумніву, це їхній шедевр.</p>
+                    </div>
+                    <div class="likes">
+                        <a href="like.js">
+                            <img src="like.svg">
+                        </a>
+                        <p id="numbers">20</p>
+                        <p>вподобань</p>
+                    </div>
+                    <hr>
+                </div>
+            </li>
+            <li class="review1">
+                <a class="poster-review" href="marvelsspiderman2.html"></a>
+                <img src="spiderman2.png" alt="Marvel's Spider-Man 2">
+                <div class="block">
+                    <div class="name">
+                        <a href="marvelsspiderman2.html">
+                            <h4>Marvel's Spider-Man 2</h4>
+                        </a>
+                        <small class="year">
+                            <a href="year/2023">
+                                <p>2023</p>
+                            </a>
+                        </small>
+                    </div>
+                    <div class="status">
+                        <p id="stat3"><b>Пройдено</b></p>
+                        <p>на</p>
+                        <a href="platform/ps">
+                            <img src="ps.png" alt="PlayStation">
+                        </a>
+                    </div>
+                    <div class="user-ava-rating">
+                        <div class="user-ava-name">
+                            <a href="userid">
+                                <img src="user1.jpg" alt="User avatar">
+                            </a>
+                            <a href="userid">
+                                <p>JoRod</p>
+                            </a>
+                        </div>
+                        <div class="user-rating">
+                            <img src="7.png" alt="rating">
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Gameplay-wise, incredible. I can’t see a way to improve traversal from here, it’s just
+                            that
+                            perfect.
+                            Some might consider the combat easy or button-mashy but I think it fits the game. The
+                            bosses
+                            had
+                            some issues but overall were fun. The game was never boring.<br>
+                            It fails in the writing. The main plot is extremely predictable and lacks emotional
+                            punch.
+                            The
+                            character writing is weak, milquetoast, and childish. I understand it’s a spider-man
+                            story,
+                            but
+                            so
+                            is Into the Spider-Verse and it doesn’t need to be childish and cringe to appeal to
+                            12-year-olds
+                            (and remember, Spider-Man 2 is 16+).<br>
+                            I hope they find a way to improve this in the franchise, but I doubt it.</p>
+                    </div>
+                    <div class="likes">
+                        <a href="like.js">
+                            <img src="like.svg">
+                        </a>
+                        <p id="numbers">10</p>
+                        <p>вподобань</p>
+                    </div>
+                    <hr>
+                </div>
+            </li>
+            <li class="review1">
+                <a class="poster-review" href="RE1.html"></a>
+                <img src="re1.jpg" alt="Resident Evil (2014)">
+                <div class="block">
+                    <div class="name">
+                        <a href="RE1.html">
+                            <h4>Resident Evil</h4>
+                        </a>
+                        <small class="year">
+                            <a href="year/2014">
+                                <p>2014</p>
+                            </a>
+                        </small>
+                    </div>
+                    <div class="status">
+                        <p id="stat4"><b>Закинуто</b></p>
+                        <p>на</p>
+                        <a href="platform/pc">
+                            <img src="windows.png" alt="PC Windows">
+                        </a>
+                    </div>
+                    <div class="user-ava-rating">
+                        <div class="user-ava-name">
+                            <a href="userid">
+                                <img src="user2.jfif" alt="User avatar">
+                            </a>
+                            <a href="userid">
+                                <p>RedBackLoggd</p>
+                            </a>
+                        </div>
+                        <div class="user-rating">
+                            <img src="4.png" alt="rating">
+                        </div>
+                    </div>
+                    <div class="review-text">
+                        <p>Resident Evil is a frustrating classic, its various systems a conglomeration of deliberately
+                            obtuse
+                            design. Back in 1996, I can definitely see where the appeal came from; however, the years
+                            since
+                            have
+                            not been kind, and in hewing so close to that original blueprint, Shinji Mikami’s remake
+                            fails
+                            to be
+                            a worthwhile endeavor.
+                        </p>
+                    </div>
+                    <div class="likes">
+                        <a href="like.js">
+                            <img src="like.svg">
+                        </a>
+                        <p id="numbers">7</p>
+                        <p>вподобань</p>
+                    </div>
+                    <hr>
+                </div>
+            </li>
+        </ul>
+        <div class="news-text">
+            <p>Новини</p>
+            <hr>
+        </div>
+        <div class="news">
+            <div class="news1">
+                <a href="news1">
+                    <img src="news1.jpg" alt="News 1">
+                </a>
+                <div class="title">
+                    <a href="news1">
+                        <h4>TGA 2023</h4>
+                    </a>
+                </div>
+                <div class="descr">
+                    <p>Голосування за гру року 2023 розпочато
+                        Номінантами на GOTY в цьому році стали:&nbsp;
+                        Baldur's Gate III,
+                        Alan Wake 2,
+                        Marvel's Spider-Man 2,
+                        Resident Evil 4,
+                        The Legend of Zelda: Tears of the Kingdom,
+                        Super Mario Bros. Wonder.
+                    </p>
+                </div>
+            </div>
+            <div class="news1">
+                <a href="news2">
+                    <img src="news2.jpg" alt="News 2">
+                </a>
+                <div class="title">
+                    <a href="news2">
+                        <h4>FFVII Rebirth</h4>
+                    </a>
+                </div>
+                <div class="descr">
+                    <p>В FF7 Rebirth можна буде плавати!
+                        Клауд і компанія вперше зможуть поплавати! Відповідний ролик
+                        на своїй сторінці у Twitter розмістила Square Enix.
+                        <br>
+                        В оригінальній FF7 вода була радше, як бар'єром.
+                    </p>
+                </div>
+            </div>
+            <div class="news1">
+                <a href="news3">
+                    <img src="news3.jpg" alt="News 3">
+                </a>
+                <div class="title">
+                    <a href="news3">
+                        <h4>PlayStation 5</h4>
+                    </a>
+                </div>
+                <div class="descr">
+                    <p>PlayStation 5 у Британії продається краще за всі інші консолі разом взяті.
+                        <br>За даними британської дослідницької компанії GfK, на PS5 припало 43% всіх продажів консолей
+                        у
+                        період з листопада 2022 року по жовтень 2023 року.
+                        <br>Але якщо зосередитися на останніх шести місяцях, то продажі PS5 становлять трохи більше 50
+                        відсотків усіх покупок консолей, починаючи з травня.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-line1">
+                <p><a href="about">Про нас</a></p>
+                <p><a href="contacts">Контакти</a></p>
+                <p><a href="terms">Умови використання</a></p>
+                <p><a href="help">Допомога</a></p>
+            </div>
+            <div class="footer-line2">
+                <p>© GameVerse Limited. Made by <a href="https://www.instagram.com/enr1k327"> Yurii Popiuk</a> from
+                    Ukraine.</p>
+                <p>Дані про ігри взяті з <a href="https://www.igdb.com/">IGDB</a>.</p>
+                <p><a href="mobile">Мобільний сайт</a>.</p>
+            </div>
+            <div class="socials">
+                <a href="instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="twitter">
+                    <img src="Twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

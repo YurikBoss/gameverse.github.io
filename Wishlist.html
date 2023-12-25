@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="wishlist.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Список бажаного - Enr1k3</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logotype">
+            <a href="Index.html">
+                <img class="logo" src="Лого.png" />
+            </a>
+        </div>
+        <div class="profile-btn">
+            <a href="Profile.html">
+                <img src="ava.jpg" alt="avatar">
+                Enr1k3
+                <img id="arrow" src="down.png" alt="down arrow">
+            </a>
+        </div>
+        <div class="games-btn">
+            <a href="Games.html">Ігри</a>
+        </div>
+        <div class="lists-btn">
+            <a href="Lists.html">
+                <span>Списки</span>
+            </a>
+        </div>
+        <div class="journal-btn">
+            <a href="Diary.html">
+                <span>Журнал</span>
+            </a>
+        </div>
+        <div class="search-field">
+            <form class="form-search" action="/search/" target="_blank">
+                <input type="hidden" name="searchid" value="">
+                <input type="search" name="text" required placeholder="пошук">
+                <input type="image" src="search.png" />
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <div class="user-ava-category">
+            <div class="user-info">
+                <div class="ava-name">
+                    <img class="ava" src="ava.jpg" alt="Enr1k3 ava">
+                    <span class="nickname">Enr1k3</span>
+                </div>
+            </div>
+            <div class="text">
+                <a href="Profile.html">
+                    <span class="category">Профіль</span>
+                </a>
+                <a href="Activity.html">
+                    <span class="category">Активність</span>
+                </a>
+                <a href="UserGames.html">
+                    <span class="category">Ігри</span>
+                </a>
+                <a href="Diary.html">
+                    <span class="category">Щоденник</span>
+                </a>
+                <a href="Reviews.html">
+                    <span class="category">Відгуки</span>
+                </a>
+                <a href="Wishlist.html">
+                    <span class="category-active">Список бажаного</span>
+                </a>
+                <a href="Liked.html">
+                    <span class="category">Уподобані</span>
+                </a>
+            </div>
+        </div>
+        <span class="wishlist-text">Ви хочете зіграти в 10 ігор</span>
+        <hr>
+        <div class="filter">
+            <div class="filt">
+                <span class="filt-text">ДЕСЯТИЛІТТЯ</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">ЖАНР</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">ПЛАТФОРМА</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">Сортувати по ДАТІ ДОДАВАННЯ</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+            <div class="filt">
+                <span class="filt-text">СТАТУС</span>
+                <img src="галочка.png" alt="down arrow">
+            </div>
+        </div>
+        <hr>
+        <ul class="games">
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="ew.jpg" alt="The Evil Within">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="alanwake2.png" alt="Alan Wake 2">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="acmirage.png" alt="Assassin's Creed Mirage">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="mw3.jpg" alt="Call of Duty Modern Warfare 3 (2023)">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="re4.jpg" alt="Resident Evil 4 (2023)">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="ragnarok.png" alt="God of War Ragnarok">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="re8.jpg" alt="Resident Evil 8">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="witcher3.jpg" alt="The Witcher 3">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="witcher2.jpg" alt="The Witcher 2">
+                </a>
+            </li>
+            <li class="frame1">
+                <a href="GameCard.html">
+                    <img class="poster" src="witcher1.jpg" alt="The Witcher">
+                </a>
+            </li>
+        </ul>
+        <section>
+            <div class="panel">
+                <a href="private-list">
+                    <span>Зробити цей список приватним</span>
+                </a>
+                <hr class="line">
+                <a href="clear-list">
+                    <span>Очистити список бажаного</span>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-line1">
+                <p><a href="about">Про нас</a></p>
+                <p><a href="contacts">Контакти</a></p>
+                <p><a href="terms">Умови використання</a></p>
+                <p><a href="help">Допомога</a></p>
+            </div>
+            <div class="footer-line2">
+                <p>© GameVerse Limited. Made by <a href="https://www.instagram.com/enr1k327"> Yurii Popiuk</a> from
+                    Ukraine.</p>
+                <p>Дані про ігри взяті з <a href="https://www.igdb.com/">IGDB</a>.</p>
+                <p><a href="mobile">Мобільний сайт</a>.</p>
+            </div>
+            <div class="socials">
+                <a href="instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="twitter">
+                    <img src="Twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

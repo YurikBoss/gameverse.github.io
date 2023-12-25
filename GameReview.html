@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <link rel="stylesheet" href="gamecard.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Alan Wake 2 (2023)</title>
+</head>
+
+<body>
+    <div class="overlay1"></div>
+    <div class="overlay2"></div>
+    <div class="overlay3"></div>
+    <div class="header">
+        <div class="logotype">
+            <a href="Index.html">
+                <img class="logo" src="Лого.png" />
+            </a>
+        </div>
+        <div class="profile-btn">
+            <a href="Profile.html">
+                <img src="ava.jpg" alt="avatar">
+                Enr1k3
+                <img id="arrow" src="down.png" alt="down arrow">
+            </a>
+        </div>
+        <div class="games-btn">
+            <a href="Games.html">Ігри</a>
+        </div>
+        <div class="lists-btn">
+            <a href="Lists.html">
+                <span>Списки</span>
+            </a>
+        </div>
+        <div class="journal-btn">
+            <a href="Journal.html">
+                <span>Журнал</span>
+            </a>
+        </div>
+        <div class="search-field">
+            <form class="form-search" action="/search/" target="_blank">
+                <input type="hidden" name="searchid" value="">
+                <input type="search" name="text" required placeholder="пошук">
+                <input type="image" src="search.png" />
+            </form>
+        </div>
+    </div>
+    <div class="overlay4"></div>
+    <div class="log">
+        <article id="add-film">
+            <aside class="col-4">
+                <section class="poster-list">
+                    <div class="poster-game">
+                        <a href="GameCard.html" class="frame" target="_blank">
+                            <img src="alanwake2.png" width="150" height="225" alt="The Room" class="image">
+                        </a>
+                    </div>
+                </section>
+            </aside>
+            <section class="col-13">
+                <h1 id="diary-entry">Я грав у...</h1>
+                <h2><span id="game-title">Alan Wake 2</span>
+                    <small class="game-year">2023</small>
+                </h2>
+                <form method="post" action="/s/save-diary-entry" class="diary-entry-form">
+                    <input type="hidden" name="__csrf" value="6fdc0d7d69787a0c993b">
+                    <input type="hidden" name="viewingId" value="" id="frm-viewing-id">
+                    <input type="hidden" name="filmId" value="510815" id="frm-film-id">
+                    <div class="details1">
+                        <div class="det2">
+                            <div class="status1">
+                                <img src="played.png" alt="played">
+                                <span>Зіграв</span>
+                            </div>
+                        </div>
+                        <div class="det2">
+                            <div class="status2">
+                                <img src="play.png" alt="play">
+                                <span>Граю</span>
+                            </div>
+                        </div>
+                        <div class="det2">
+                            <div class="status3">
+                                <img src="backlog.png" alt="backlog">
+                                <span>Закинув</span>
+                            </div>
+                        </div>
+                        <div class="det2">
+                            <div class="status4">
+                                <img src="wishlist.png" alt="wishlist">
+                                <span>В список бажаного</span>
+                            </div>
+                        </div>
+                    </div>
+                    <fieldset>
+                        <div class="form-row">
+                            <div class="col-5">
+                                <div class="needsclick">
+                                    <label for="frm-specify-date" class="needsclick">
+                                        <input type="checkbox" name="specifiedDate" class="needsclick" value="true">
+                                        <i class="substitute"></i>
+                                        <span id="frm-specify-date-label" style="display: none;">Додати гру у
+                                            ваш&nbsp;щоденник?</span>
+                                    </label>
+                                    <span id="frm-watched-label">Грав
+                                        <a href="#" id="add-date" class="modal-link">12 Лис 2023</a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <label for="frm-rewatch" class="option-label">
+                                    <input type="checkbox" name="rewatch" class="checkbox" value="true">
+                                    <i class="substitute"></i>
+                                    Я грав цю гру раніше
+                                </label>
+                            </div>
+                            <input type="hidden" name="viewingDateStr" value="2023-11-12">
+                        </div>
+                        <div class="form-row">
+                            <textarea name="review" class="field" placeholder="Написати рецензію..."></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div id="contains-spoilers" class="col-7" style="opacity: 0.35;">
+                                <label for="frm-spoilers" class="label-spoilers">
+                                    <input type="checkbox" name="containsSpoilers" class="checkbox" value="true">
+                                    <i class="substitute"></i>
+                                    Містить спойлери
+                                </label>
+                            </div>
+                            <div class="col-1">
+                                <label class="option-label">Лайк</label>
+                                <br>
+                                <img src="like.svg">
+                            </div>
+                            <div class="col-3">
+                                <label>Оцінка</label>
+                                <br>
+                                <img src="empty_stars.png">
+                            </div>
+                            <div class="col-2">
+                                <label for="platforms">Платформа</label>
+                                <br>
+                                <select id="platforms" name="platforms">
+                                    <option value="">Оберіть платформу</option>
+                                    <option value="PC">PC</option>
+                                    <option value="PS">PlayStation</option>
+                                    <option value="Xbox">Xbox</option>
+                                    <option value="Switch">Nintendo Switch</option>
+                                </select>
+                            </div>
+                            <div class="col-right">
+                                <input type="submit" class="button-submit" value="Зберегти" formaction="GameCard.html">
+                                <input type="submit" class="button-delete" value="Відмінити" formaction="GameCard.html">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+        </article>
+    </div>
+    <span class="title">
+        <h2>Alan Wake II (2023)</h2>
+    </span>
+    <div class="content">
+        <section>
+            <div class="poster-rate">
+                <img class="poster" src="alanwake2.png" alt="Alan Wake II">
+                <div class="rate-panel">
+                    <button class="log-btn">
+                        <span>Журнал або відгук</span>
+                    </button>
+                    <div class="rate-stars">
+                        <img src="rate.png" alt="stars">
+                    </div>
+                    <div class="line"></div>
+                    <div class="game-status">
+                        <a href="played.js">
+                            <img class="first" src="played.png" alt="played btn">
+                            <span>Зіграв</span>
+                        </a>
+                        <a href="play.js">
+                            <img src="play.png" alt="play btn">
+                            <span>Граю</span>
+                        </a>
+                        <a href="backlog.js">
+                            <img src="backlog.png" alt="backlog btn">
+                            <span>Закинув</span>
+                        </a>
+                        <a href="wishlist.js">
+                            <img src="wishlist.png" alt="wishlist btn">
+                            <span>Список бажань</span>
+                        </a>
+                    </div>
+                    <a href="add">
+                        <div class="add-to-list">
+                            <span>Додати до списку</span>
+                            <img src="arrow.png" alt="arrow">
+                        </div>
+                    </a>
+                </div>
+                <div class="stat-panel">
+                    <div class="stat-rating">
+                        <span class="middle-rating-text">Середня оцінка</span>
+                        <span class="middle-rating">4.6</span>
+                        <div class="diagram">
+                            <a class="column1" href="rate#1"></a>
+                            <a class="column2" href="rate#2"></a>
+                            <a class="column3" href="rate#3"></a>
+                            <a class="column4" href="rate#4"></a>
+                            <a class="column5" href="rate#5"></a>
+                            <a class="column6" href="rate#6"></a>
+                            <a class="column7" href="rate#7"></a>
+                            <a class="column8" href="rate#8"></a>
+                            <a class="column9" href="rate#9"></a>
+                            <a class="column10" href="rate#10"></a>
+                        </div>
+                        <div class="rates">
+                            <img src="rates.png" alt="rates">
+                        </div>
+                    </div>
+                    <div class="line1"></div>
+                    <div class="details">
+                        <div class="det1">
+                            <div class="status1">
+                                <img src="played.png" alt="played">
+                                <span>Зіграли</span>
+                            </div>
+                            <span class="played">78</span>
+                        </div>
+                        <div class="det1">
+                            <div class="status2">
+                                <img src="play.png" alt="play">
+                                <span>Грають</span>
+                            </div>
+                            <span class="played">36</span>
+                        </div>
+                        <div class="det1">
+                            <div class="status3">
+                                <img src="backlog.png" alt="backlog">
+                                <span>Закинули</span>
+                            </div>
+                            <span class="played">17</span>
+                        </div>
+                        <div class="det1">
+                            <div class="status4">
+                                <img src="wishlist.png" alt="wishlist">
+                                <span>В списку бажаного</span>
+                            </div>
+                            <span class="played">1.8К</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="check-diary.js">
+                    <div class="check-diary">
+                        <img src="list.png" alt="list">
+                        <span>Переглянути власний журнал</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <div class="game-details">
+            <div class="released-on">
+                <span>Доступно на:</span>
+                <div class="platforms">
+                    <a href="https://www.playstation.com/uk-ua/games/alan-wake-2/">
+                        <img src="ps.png" alt="PlayStation">
+                    </a>
+                    <a href="https://store.epicgames.com/en-US/p/alan-wake-2?lang=en-US">
+                        <img src="windows.png" alt="Windows">
+                    </a>
+                    <a href="https://www.xbox.com/uk-UA/games/store/alan-wake-2/9PNZH065X7PV">
+                        <img src="xbox.png" alt="Xbox">
+                    </a>
+                </div>
+            </div>
+            <div class="details-text">
+                <div class="release-date">
+                    <span class="title">Реліз:</span>
+                    <span>27 жовтня 2023</span>
+                </div>
+                <div class="genre">
+                    <span class="title">Жанр:</span>
+                    <span>Survival horror, пригодницька відеогра, шутер від третьої особи</span>
+                </div>
+                <div class="engine">
+                    <span class="title">Рушій:</span>
+                    <span>Northlight Engine</span>
+                </div>
+                <div class="publisher">
+                    <span class="title">Видавець:</span>
+                    <span>Epic Games</span>
+                </div>
+            </div>
+        </div>
+        <div class="info-text">
+            <span>
+                Розроблено<br>
+            </span>
+            <a href="Developer.html">
+                <span class="company">
+                    Remedy Entertainment
+                </span>
+            </a>
+            <span class="game-desrc">
+                Монстри мають багато облич. Алан Вейк повертається у цій грі жахів на виживання слідом за письменником,
+                який продовжує стикатися з психологічним жахом, що перевершує все, що можна уявити в його книгах.
+            </span>
+        </div>
+        <div class="popular-reviews-text">
+            <p>Популярні огляди</p>
+        </div>
+        <div class="review1">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user.png" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>Frabknando</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="8.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat1"><b>Грав</b></p>
+                    <p>на</p>
+                    <a href="platform/ps">
+                        <img src="ps.png" alt="PlayStation">
+                    </a>
+                </div>
+            </div>
+
+            <div class="review-text">
+                <p>Неймовірно унікальна гра, в яку варто пограти. У бою трохи не вистачає, але поза ним все чудово.
+                    Просто прикро, скільки в цій грі є боротьба.</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">54</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+        <div class="review2">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user1.jpg" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>niqhdfd</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="10.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat2"><b>Пройдено</b></p>
+                    <p>на</p>
+                    <a href="platform/pc">
+                        <img src="windows.png" alt="PC Windows">
+                    </a>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>змушує мене хотіти, щоб у мене був кумедний маленький акцент, який я міг би спробувати приховати</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">10</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+        <div class="review3">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user4.png" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>mjoshua</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="7.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat2"><b>Пройдено</b></p>
+                    <p>на</p>
+                    <a href="platform/pc">
+                        <img src="windows.png" alt="PC Windows">
+                    </a>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>Alan Wake 2 — це суміш двох ігор з різною якістю геймплея. Гра за Saga була добре вкорінена в
+                    таємницях, інтригах і гідних сегментах виживання. Я б оцінив її половину гри як вісім із десяти
+                    десяти. Грати за Алана, однак, дратували мене до лайна. У той час як його сторона сповнена акуратних
+                    моментів оповідання, дезорієнтація та відсутність грунту викликали у мене присмак у роті шість із
+                    десяти. Викуповувальна якість зчеплення половини гри Алана була його показовою послідовністю Старих
+                    Богів Асгарда.</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">8</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+        <div class="review4">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user5.jpg" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>Spiderboi</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="10.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat2"><b>Пройдено</b></p>
+                    <p>на</p>
+                    <a href="platform/pc">
+                        <img src="windows.png" alt="PC Windows">
+                    </a>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>Як людина, яка виявила, що перша гра була нормальною (кілька крутих ідей із виконанням), я шокований
+                    тим, наскільки чудовою виявилася ця гра. Створено на основі ідей першої гри в багатьох нових
+                    захоплюючих способах щодо оповідання та ігрового процесу; так радий переходу до survival horror! Я
+                    не можу дочекатися AW3, це гра, про яку я буду думати довго.</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">7</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+        <div class="review5">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user6.jpg" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>Nascimento</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="10.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat1"><b>Грав</b></p>
+                    <p>на</p>
+                    <a href="platform/pc">
+                        <img src="windows.png" alt="PC Windows">
+                    </a>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>Найкраща гра жахів/розслідування за останні 20 років.</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">5</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+        <div class="review6">
+            <hr>
+            <div class="user-ava-rating">
+                <div class="user-ava-name">
+                    <a href="userid">
+                        <img src="user1.jpg" alt="User avatar">
+                    </a>
+                    <a href="userid">
+                        <p>leviheck</p>
+                    </a>
+                </div>
+                <div class="user-rating">
+                    <img src="10.png" alt="rating">
+                </div>
+                <div class="status">
+                    <p id="stat2"><b>Пройдено</b></p>
+                    <p>на</p>
+                    <a href="platform/ps">
+                        <img src="ps.png" alt="PlayStation">
+                    </a>
+                </div>
+            </div>
+            <div class="review-text">
+                <p>гра 2023 року, легкий шедевр</p>
+            </div>
+            <div class="likes">
+                <a href="like.js">
+                    <img src="like.svg">
+                </a>
+                <p id="numbers">1</p>
+                <p>вподобань</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footer-line1">
+                <p><a href="about">Про нас</a></p>
+                <p><a href="contacts">Контакти</a></p>
+                <p><a href="terms">Умови використання</a></p>
+                <p><a href="help">Допомога</a></p>
+            </div>
+            <div class="footer-line2">
+                <p>© GameVerse Limited. Made by <a href="https://www.instagram.com/enr1k327"> Yurii Popiuk</a> from
+                    Ukraine.</p>
+                <p>Дані про ігри взяті з <a href="https://www.igdb.com/">IGDB</a>.</p>
+                <p><a href="mobile">Мобільний сайт</a>.</p>
+            </div>
+            <div class="socials">
+                <a href="instagram">
+                    <img src="instagram.png" alt="Instagram">
+                </a>
+                <a href="facebook">
+                    <img src="facebook.png" alt="Facebook">
+                </a>
+                <a href="twitter">
+                    <img src="Twitter.png" alt="Twitter">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
